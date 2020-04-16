@@ -25,5 +25,17 @@
 			<artifactId>dominiojpa</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>es.avalon</groupId>
+			<artifactId>repositorios</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>5.2.5.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 </project>
