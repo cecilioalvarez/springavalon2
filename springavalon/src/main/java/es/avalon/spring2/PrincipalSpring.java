@@ -11,6 +11,8 @@ public class PrincipalSpring {
 		factoria.refresh();
 		ServicioA miServicio = factoria.getBean(ServicioA.class);
 		System.out.println(miServicio.mensaje());
-		
+		ServicioB miServicioB = factoria.getBean(ServicioB.class);
+		System.out.println(miServicioB.mensaje());
+
 	}
 }

@@ -20,6 +20,12 @@
 			<version>5.2.5.RELEASE</version>
 		</dependency>
 
+		<dependency>
+			<groupId>es.avalon</groupId>
+			<artifactId>dominiojpa</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
+		
 	</dependencies>
 
 </project>
