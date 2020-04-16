@@ -13,8 +13,10 @@ public class PrincipalSpring {
 		factoria.refresh();
 		
 		ServicioA miservicio=factoria.getBean(ServicioA.class);
-		
 		System.out.println(miservicio.mensaje());
+		
+		ServicioB miservicioB=factoria.getBean(ServicioB.class);
+		System.out.println(miservicioB.mensaje());
 
 	}
 
