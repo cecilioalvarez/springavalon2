@@ -1,4 +1,4 @@
-package es.avalon.spring2;
+package es.avalon.spring3;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,13 +10,12 @@ public class PrincipalSpring {
 		factoria.register(SpringConfigurador.class);
 		factoria.refresh();
 		
-		ServicioA miservicio= factoria.getBean(ServicioA.class);
+		LibroRepositoryJPA mirepositorio= factoria.getBean(LibroRepositoryJPA.class);
 		
-		System.out.println(miservicio.mensaje());
+		Libro libro= mirepositorio.buscarUno();
+		System.out.println(libro.getIsbn());
 		
-		ServicioB miservicioB= factoria.getBean(ServicioB.class);
 		
-		System.out.println(miservicioB.mensaje());
 	
 
 	}
