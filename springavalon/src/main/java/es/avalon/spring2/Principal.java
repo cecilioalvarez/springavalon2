@@ -11,7 +11,10 @@ AnnotationConfigApplicationContext factoria= new AnnotationConfigApplicationCont
 factoria.register(SpringConfigurador.class);
 factoria.refresh();
 ServicioA miservicio= factoria.getBean(ServicioA.class);
+ServicioB unservicio= factoria.getBean(ServicioB.class);
 System.out.println(miservicio.mensaje());
+System.out.println(unservicio.mensaje());
+
 	}
 
 }
