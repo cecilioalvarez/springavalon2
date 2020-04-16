@@ -1,4 +1,4 @@
-package es.avalon.spring2;
+package es.avalon.spring4;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -11,12 +11,8 @@ public class PrincipalSpring {
 		factoria.register(SpringConfigurador.class);
 		factoria.refresh();
 		
-		ServicioA miservicio = factoria.getBean(ServicioA.class);
-		ServicioB miservicioB = factoria.getBean(ServicioB.class);
 		
-		
-		System.out.println(miservicio.mensaje());
-		System.out.println(miservicioB.mensaje());
+
 
 	}
 
