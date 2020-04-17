@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Service;
 
+import es.avalon.dominio.Categoria;
 import es.avalon.dominio.Libro;
 import es.avalon.repositorios.LibroRepository;
 
-@Service
 public class PrincipalSpring {
 
 	public static void main(String[] args) {
@@ -17,17 +17,20 @@ public class PrincipalSpring {
 		factoria.register(SpringConfigurador.class);
 		factoria.refresh();
 		
-		ServicioLibros repo=factoria.getBean(ServicioLibros.class);
+		ServicioLibros servicio=factoria.getBean(ServicioLibros.class);
 		/*
-		List<Libro> lista=repo.buscarLibroTodos();
+		List<Libro> lista=servicio.buscarLibroTodos();
 		
 		for (Libro libro:lista) {
 			
 			System.out.println(libro.getTitulo());
 		}
 		*/
-		servicio.insertarLibro(new Libro("1111"));
-		
+		Libro libro=new Libro("1111","nuevo","pepe",20);
+		Categoria c=servicio.buscarCategoriaPorNombre("web");
+		libro.setCategoria(c);
+		servicio.insertarLibro(libro);
+			
 
 	}
 

@@ -38,6 +38,9 @@ public class ServicioLibros {
 	public Libro buscarLibroPorTitulo(String titulo) {
 		return repositorioLibro.buscarPorTitulo(titulo);
 	}
+	
+	//Ojo este metodo necesita una transaccion del transaction manager
+	//begin
 	@Transactional
 	public void insertarLibro(Libro libro) {
 		repositorioLibro.insertar(libro);
