@@ -4,7 +4,7 @@ public class ImpresoraTinta implements Imprimible{
 	
 	public void imprimir(String texto) {
 		
-		System.out.println("La impresora de tinta imprime 5 paginas minuto " + texto);
+		System.out.println("La impresora de tinta imprime 5 paginas minuto: " + texto);
 		
 	}
 

@@ -7,7 +7,7 @@ public class FactoriaImpresoras {
 		if (tipo.equals("tinta")) {
 			return new ImpresoraTinta();
 		}else {
-			return new ImpresoraLaser();
+			return new ProxyImpresora();
 		}
 	}
 

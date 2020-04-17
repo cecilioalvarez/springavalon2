@@ -10,6 +10,9 @@ public class Principal {
 		
 		Imprimible i2 = FactoriaImpresoras.getImpresora("laser");
 		i2.imprimir("adios");
+		i2.imprimir("adios");
+		i2.imprimir("adios");
+		i2.imprimir("adios");
 
 	}
 
